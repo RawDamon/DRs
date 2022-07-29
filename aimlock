@@ -56,7 +56,7 @@ end)
     --
     if getgenv().valiansh == true then
                         game.StarterGui:SetCore("SendNotification", {
-                        Title    = " RD's lock",
+                        Title    = " Press "Q" To Toggle Silent Aim",
                         Text     = "loaded",
                         Duration = 1
         
@@ -81,7 +81,7 @@ end)
             end 
                if getgenv().NotifMode then
                 game.StarterGui:SetCore("SendNotification", {
-        Title = "RDs Lock";
+        Title = "DR's Lock";
         Text = "Target: "..tostring(Plr.Character.Humanoid.DisplayName);
     
     })
@@ -92,7 +92,7 @@ end)
             end 
         if getgenv().NotifMode then
                         game.StarterGui:SetCore("SendNotification", {
-                        Title    = " RDs Lock",
+                        Title    = " DR's Lock. ",
                         Text     = "unlocked",
                         Duration = 1
                })
