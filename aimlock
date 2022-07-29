@@ -7,7 +7,7 @@ getgenv().ChatMode = false
 getgenv().NotifMode = true
     getgenv().PartMode = true
     getgenv().AirshotFunccc = true
-    getgenv().Partz = "LowerTorso"
+    getgenv().Partz = "HumanoidRootPart"
 getgenv().AutoPrediction = false
 --
     _G.Types = {
@@ -35,8 +35,8 @@ local Runserv = game:GetService("RunService")
 circle = Drawing.new("Circle")
 circle.Color = Color3.fromRGB(255,255,255)
 circle.Thickness = 0
-circle.NumSides = 732
-circle.Radius = 732
+circle.NumSides = 1000
+circle.Radius = 1000
 circle.Thickness = 0
 circle.Transparency = 0.9
 circle.Visible = false
@@ -56,7 +56,7 @@ end)
     --
     if getgenv().valiansh == true then
                         game.StarterGui:SetCore("SendNotification", {
-                        Title    = " Press "Q" To Toggle Silent Aim",
+                        Title    = " Press 'Q' To Toggle Silent Aim",
                         Text     = "loaded",
                         Duration = 1
         
@@ -92,7 +92,7 @@ end)
             end 
         if getgenv().NotifMode then
                         game.StarterGui:SetCore("SendNotification", {
-                        Title    = " DR's Lock. ",
+                        Title    = " DR's Lock",
                         Text     = "unlocked",
                         Duration = 1
                })
