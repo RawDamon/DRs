@@ -81,7 +81,7 @@ end)
             end 
                if getgenv().NotifMode then
                 game.StarterGui:SetCore("SendNotification", {
-        Title = "<3 Chloe <3#7316's Lock";
+        Title = "RDs Lock";
         Text = "Target: "..tostring(Plr.Character.Humanoid.DisplayName);
     
     })
