@@ -1,0 +1,52 @@
+local PlaceId = game.PlaceId
+
+local Players = game:GetService("Players");
+local HttpService = game:GetService("HttpService");
+local Workspace = game:GetService("Workspace");
+local Teams = game:GetService("Teams")
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService");
+
+local CurrentCamera = Workspace.CurrentCamera
+local WorldToViewportPoint = CurrentCamera.WorldToViewportPoint
+local GetPartsObscuringTarget = CurrentCamera.GetPartsObscuringTarget
+
+local Inset = game:GetService("GuiService"):GetGuiInset().Y
+
+local FindFirstChild = game.FindFirstChild
+local FindFirstChildWhichIsA = game.FindFirstChildWhichIsA
+local IsA = game.IsA
+local Vector2new = Vector2.new
+local Vector3new = Vector3.new
+local CFramenew = CFrame.new
+local Color3new = Color3.new
+
+local Tfind = table.find
+local create = table.create
+local format = string.format
+local floor = math.floor
+local gsub = string.gsub
+local sub = string.sub
+local lower = string.lower
+local upper = string.upper
+local random = math.random
+
+local DefaultSettings = {
+    Esp = {
+        NamesEnabled = true,
+        DisplayNamesEnabled = false,
+        DistanceEnabled = true,
+        HealthEnabled = true,
+        TracersEnabled = false,
+        BoxEsp = false,
+        TeamColors = true,
+        Thickness = 1.5,
+        TracerThickness = 1.6,
+        Transparency = .9,
+        TracerTrancparency = .7,
+        Size = 16,
+        RenderDistance = 9e9,
+        Color = Color3.fromRGB(19, 130, 226),
+        OutlineColor = Color3new(),
+        TracerTo = "Head",
+        BlacklistedTeams = {}
